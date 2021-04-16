@@ -7,12 +7,17 @@
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "5.2.1",
     "@vue/compiler-sfc": "^3.0.11",
+    "ts-loader": "^8.1.0",
     "turbolinks": "^5.2.0",
     "vue": "^3.0.11",
     "vue-loader": "^16.2.0"
   },
   "version": "0.1.0",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "eslint": "^7.24.0",
+    "eslint-plugin-vue": "^7.9.0",
     "webpack-dev-server": "^3.11.2"
   }
 }
