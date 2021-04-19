@@ -5,18 +5,18 @@
 </template>
 
 <script>
-import { ref } from 'vue'
+import { ref } from "vue";
 
 export default {
-  name: 'HelloWorld',
+  name: "HelloWorld",
   setup() {
-      const message = ref('Hello World')
+    const message = ref("Hello World");
 
-      return {
-        message
-      }
-  }
-}
+    return {
+      message,
+    };
+  },
+};
 </script>
 
 <style scoped>
