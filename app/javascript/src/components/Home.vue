@@ -1,20 +1,17 @@
 <template>
-  <p>
-    {{ message }}
-  </p>
+  <div id="app">
+    <terminal />
+  </div>
 </template>
 
 <script>
 import { ref } from "vue";
+import Terminal from "@/components/Terminal.vue";
 
 export default {
-  name: "HelloWorld",
-  setup() {
-    const message = ref("Hello World");
-
-    return {
-      message,
-    };
+  name: "app",
+  components: {
+    Terminal,
   },
 };
 </script>
