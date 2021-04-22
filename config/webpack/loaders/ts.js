@@ -4,5 +4,5 @@ module.exports = {
   options: {
     appendTsSuffixTo: [/\.vue$/],
   },
-  exclude: /node_modules/,
+  //  exclude: /node_modules/,
 };

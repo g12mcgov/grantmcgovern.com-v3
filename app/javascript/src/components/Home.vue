@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <terminal />
+    <intro />
   </div>
 </template>
 
 <script>
 import { ref } from "vue";
-import Terminal from "@/components/Terminal.vue";
+import Intro from "@/components/Intro.vue";
 
 export default {
   name: "app",
   components: {
-    Terminal,
+    Intro,
   },
 };
 </script>
