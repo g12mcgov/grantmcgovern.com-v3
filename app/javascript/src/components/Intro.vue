@@ -134,19 +134,23 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
 h1 {
+  font-family: 'Source Code Pro', monospace;
   text-align: center;
+  color: white;
 }
 
 #particles-js {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #b61924;
-  background-image: url("");
+  background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+  max-height: 700px;
 }
 
 #overlay {
@@ -155,6 +159,5 @@ h1 {
   margin-right: auto;
   left: 0;
   right: 0;
-  text-align: center;
 }
 </style>

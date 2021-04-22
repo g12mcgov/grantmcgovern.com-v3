@@ -99,17 +99,16 @@ window.addEventListener("load", function () {
     if (event.keyCode == 38) {
       var last_command = cache[0];
       console.log(last_command);
-      //console.log(cache);
     }
   };
 
   function handleCommand(command) {
     cleanTerminal();
-    command_list = command.split(" ");
+    var command_list = command.split(" ");
 
     if (command_list.length > 1) {
-      command = command_list[0];
-      args = command_list.slice(1);
+      var command = command_list[0];
+      var args = command_list.slice(1);
       executeCommandArgs(command, args);
     } else {
       executeCommandNoArgs(command);
