@@ -29,6 +29,4 @@ environment.plugins.prepend(
 environment.loaders.prepend("ts", ts);
 environment.loaders.prepend("vue", vue);
 
-console.log(JSON.stringify(environment, undefined, 2));
-
 module.exports = environment;
