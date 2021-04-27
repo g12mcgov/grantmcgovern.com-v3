@@ -1,5 +1,5 @@
 <template>
-  <div id="container">
+  <div class="intro">
     <div id="particles-js"></div>
     <div id="overlay">
       <h1>Grant McGovern</h1>
@@ -143,7 +143,7 @@ h1 {
   color: white;
 }
 
-#container {
+.intro {
   height: 700px;
 }
 

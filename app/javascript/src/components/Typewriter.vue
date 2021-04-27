@@ -1,5 +1,5 @@
 <template>
-    <p>{{ text }}<span id="cursor">|</span></p>
+  <p>{{ text }}<span id="cursor">|</span></p>
 </template>
 
 <script>

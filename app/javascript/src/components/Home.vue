@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <intro />
-    <bio />
+    <Intro />
+    <Bio />
+    <WorkExperience />
   </div>
 </template>
 
@@ -9,12 +10,14 @@
 import { ref } from "vue";
 import Intro from "@/components/Intro.vue";
 import Bio from "@/components/Bio.vue";
+import WorkExperience from "@/components/WorkExperience.vue";
 
 export default {
   name: "app",
   components: {
     Intro,
     Bio,
+    WorkExperience,
   },
 };
 </script>
