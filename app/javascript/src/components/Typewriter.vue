@@ -1,17 +1,12 @@
 <template>
-  <div id="wrapper">
     <p>{{ text }}<span id="cursor">|</span></p>
-  </div>
 </template>
 
 <script>
-import { onMounted } from "vue";
-
 let i = 0;
 let cursorVisible = true;
 
 export default {
-  el: "#wrapper",
   name: "typewriter",
   props: {
     phrase: {
@@ -25,7 +20,6 @@ export default {
     };
   },
   mounted() {
-    console.log("Yo!");
     this.typewriter();
   },
   methods: {
