@@ -1,17 +1,20 @@
 <template>
   <div id="app">
     <intro />
+    <bio />
   </div>
 </template>
 
 <script>
 import { ref } from "vue";
 import Intro from "@/components/Intro.vue";
+import Bio from "@/components/Bio.vue";
 
 export default {
   name: "app",
   components: {
     Intro,
+    Bio,
   },
 };
 </script>

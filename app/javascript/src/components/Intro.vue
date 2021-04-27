@@ -138,8 +138,13 @@ export default {
 
 h1 {
   font-family: "Source Code Pro", monospace;
+  font-size: 55px;
   text-align: center;
   color: white;
+}
+
+#container {
+  height: 700px;
 }
 
 #particles-js {
