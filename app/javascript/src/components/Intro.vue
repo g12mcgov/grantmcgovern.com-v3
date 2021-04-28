@@ -164,5 +164,7 @@ h1 {
   margin-right: auto;
   left: 0;
   right: 0;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 </style>

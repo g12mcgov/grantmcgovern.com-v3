@@ -51,6 +51,8 @@ h1 {
 .overview {
   max-width: 700px;
   margin: 0 auto;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .overview p {

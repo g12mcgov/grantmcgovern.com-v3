@@ -2,7 +2,7 @@
   <div id="app">
     <Intro />
     <Bio />
-    <WorkExperience />
+    <!-- <WorkExperience /> -->
   </div>
 </template>
 

@@ -1,5 +1,5 @@
 .terminal {
-  width: 600px;
+  max-width: 600px;
   height: 400px;
   background-color: black;
   margin: 0 auto;
