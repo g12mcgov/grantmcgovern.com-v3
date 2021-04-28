@@ -72,25 +72,19 @@ window.addEventListener("load", function () {
       displayText("ls -- list directory contents ( [ls] [file ...])<br>");
       displayText("cd -- change directory ( [cd] [directory ...])<br>");
     },
+    clear: function () {
+      clearTerminal();
+    },
   };
 
-  // Add root text
-  addRootText();
-
-  // Append input_form dynamically to div
-  addInputForm();
-
-  // Move cursor to input prompt
-  activateCursor();
+  initPrompt();
 
   // Listen for enter key press
   document.onkeypress = function (event) {
     if (event.keyCode == 13) {
       cache.push(input.value);
       handleCommand(input.value);
-      addRootText();
-      addInputForm();
-      activateCursor();
+      initPrompt();
     }
   };
 
@@ -101,6 +95,12 @@ window.addEventListener("load", function () {
       console.log(last_command);
     }
   };
+
+  function initPrompt() {
+    addRootText();
+    addInputForm();
+    activateCursor();
+  }
 
   function handleCommand(command) {
     cleanTerminal();
@@ -135,6 +135,15 @@ window.addEventListener("load", function () {
     terminal.removeChild(input);
     var newline = document.createElement("br");
     terminal.appendChild(newline);
+  }
+
+  function clearTerminal() {
+    var terminal = document.getElementById("terminal");
+    while (terminal.firstChild) {
+      terminal.removeChild(terminal.firstChild);
+    }
+    // Prompt will be re-initialized above since
+    // every enter-key press forces an initPrompt()
   }
 
   function activateCursor() {
