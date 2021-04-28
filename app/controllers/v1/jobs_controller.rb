@@ -1,4 +1,7 @@
 class V1::JobsController < ApplicationController
+  skip_before_action :authenticate_request!, :only => :index
+  #skip_authorize_resource :only => :index
+
   def index
     jobs = Job.all.map do |job|
       { title: job.title, timerange: job.timerange }
