@@ -22,12 +22,12 @@ class AuthenticateUser
     end
 
     # Check password
-    unless user.authenticate(password)
+    unless current_user.valid_password?(password)
       errors.add :message, "Invalid email or password"
       return nil
     end
 
-    return user
+    current_user
   end
 end
 
