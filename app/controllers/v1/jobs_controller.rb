@@ -8,6 +8,12 @@ class V1::JobsController < ApplicationController
   end
 
   def create 
-
+    puts params
   end
+
+  def show
+    job = Job.find(params[:id])
+    render json: job.to_json, status: :ok
+  end
+
 end

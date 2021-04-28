@@ -18,5 +18,7 @@ module GrantmcgovernComV4
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.autoload_paths << Rails.root.join("lib")
+    config.api_only = false
   end
 end
